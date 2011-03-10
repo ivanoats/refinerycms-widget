@@ -30,7 +30,7 @@ You need to add in your ApplicationController
 End in views/pages/home.html.erb and page show.html.erb
 
   <% if @widgets %>
-      <%= render :partial => "/widget/show" %>
+    <%= render :partial => "/widget/show" %>
   <% end %>
 
 
