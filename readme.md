@@ -3,7 +3,7 @@
 ## Under developpement actually
 I will write a better readme when I have more time
 
-## If someone wants to try
+## If someone want to try
 You need to add in your ApplicationController
 
     before_filter :sidebar_widget
