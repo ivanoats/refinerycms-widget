@@ -1,0 +1,5 @@
+<% content_for :body_content_right do %>
+    <% @widgets.each do |item| %>
+        <%= render :partial => "/#{item.user_plugin.name}/widget" %>
+    <% end %>
+<% end %>

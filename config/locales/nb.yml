@@ -1,0 +1,20 @@
+nb:
+  plugins:
+    widgets:
+      title: Widgets
+  admin:
+    widgets:
+      index:
+        title: Widgets
+        create_new: Lag en ny Widget
+        reorder: Endre rekkefølgen på Widgets
+        reorder_done: Ferdig å endre rekkefølgen Widgets
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Widgets enda. Klikk på "Lag en ny Widget" for å legge til din første widget.
+      widget:
+        view_live_html: Vis hvordan denne widget ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne widget
+        delete: Fjern denne widget permanent
+  widgets:
+    show:
+      other: Andre Widgets

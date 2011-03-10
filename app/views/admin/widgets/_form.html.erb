@@ -1,0 +1,42 @@
+<%= form_for [:admin, @widget] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @widget,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :user_plugin_id -%>
+    <%= f.select :user_plugin_id, @user_plugins.map {|u| [u.name, u.id]}, :class => 'larger widest' -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.widgets.widget'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete')
+              } %>
+<% end -%>
+<pre>
+-------------------------------------------------------------------------
+<% 
+@ups.each do |plugin|
+p = Refinery::Plugins.registered.find_by_name(plugin.name)
+%>
+<%= debug(p) %>
+    <% p.activity.each do |a|  %>
+<% c = "#{a.class.name}sController" %>
+<%= debug(c) %>
+    <% begin %>
+<% ci = Object.const_get(c) %>
+<%= debug(ci) %>
+<%= debug(ci.method_defined?(:widget)) %>
+    <% rescue %>
+    <% end %>
+<%= debug(a.class) %>
+<%= debug(a.class.method_defined?(:widget)) %>
+-------------------------------------------------------------------------
+    <% end %>
+
+<% end %>
+</pre>

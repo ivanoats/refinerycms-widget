@@ -1,0 +1,24 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    widgets:
+      title: Widgets
+  admin:
+    widgets:
+      index:
+        title: Widgets
+        create_new: Add New Widget
+        reorder: Reorder Widgets
+        reorder_done: Done Reordering Widgets
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Widgets yet. Click "Add New Widget" to add your first widget.
+      widget:
+        view_live_html: View this widget live <br/><em>(opens in a new window)</em>
+        edit: Edit this widget
+        delete: Remove this widget forever
+  widgets:
+    show:
+      other: Other Widgets

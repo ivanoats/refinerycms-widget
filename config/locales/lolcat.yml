@@ -1,0 +1,24 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    widgets:
+      title: Widgets
+  admin:
+    widgets:
+      index:
+        title: Widgets
+        create_new: CREATE NEW Widget
+        reorder: REORDR Widgets
+        reorder_done: DUN REORDERIN Widgets
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Widgets YET. CLICK "CREATE NEW Widget" 2 ADD UR FURST widget.
+      widget:
+        view_live_html: VIEW DIS widget LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS widget
+        delete: REMOOV DIS widget FOREVR
+  widgets:
+    show:
+      other: OTHR Widgets

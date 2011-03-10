@@ -1,0 +1,20 @@
+nl:
+  plugins:
+    widgets:
+      title: Widgets
+  admin:
+    widgets:
+      index:
+        title: Widgets
+        create_new: Maak een nieuwe Widget
+        reorder: Wijzig de volgorde van de Widgets
+        reorder_done: Klaar met het wijzingen van de volgorde van de Widgets
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Widgets. Druk op 'Maak een nieuwe Widget' om de eerste aan te maken.
+      widget:
+        view_live_html: Bekijk deze widget op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze widget
+        delete: Verwijder deze widget voor eeuwig
+  widgets:
+    show:
+      other: Andere Widgets
