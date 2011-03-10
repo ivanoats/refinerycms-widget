@@ -27,6 +27,12 @@ You need to add in your ApplicationController
         end
     end
 
+End in views/pages/home.html.erb and page show.html.erb
+
+  <% if @widgets %>
+      <%= render :partial => "/widget/show" %>
+  <% end %>
+
 
 ## How to build this engine as a gem
 
